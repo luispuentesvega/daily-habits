@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import _ from 'lodash';
+import { flatMap, range } from 'lodash';
 
-const rangeHours = _.range(4, 23);
-const HOURS = _.flatMap(rangeHours, (hour) => [
+const rangeHours = range(4, 23);
+const HOURS = flatMap(rangeHours, (hour) => [
   hour < 10 ? `0${hour}:00` : `${hour}:00`,
   hour < 10 ? `0${hour}:30` : `${hour}:30`,
 ]);

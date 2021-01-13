@@ -1,6 +1,6 @@
 ## App to register your Daily Activities
 
-This app helps you to track your habits! ::stars:
+This app helps you to track your habits! :stars:
 
 ### Demo
 

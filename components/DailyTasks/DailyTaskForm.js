@@ -8,7 +8,7 @@ const HOURS = _.flatMap(rangeHours, (hour) => [
   hour < 10 ? `0${hour}:30` : `${hour}:30`,
 ]);
 
-export default function DailyTaskForm({ setActivities }) {
+export default function DailyTasksForm({ setActivities }) {
   const { register, handleSubmit, watch, errors, reset } = useForm();
 
   const onSubmit = (data) => {
@@ -27,7 +27,12 @@ export default function DailyTaskForm({ setActivities }) {
       <div className="fields">
         <div className="field">
           <label>From</label>
-          <select name="from" ref={register} className="ui fluid dropdown">
+          <select
+            data-testid="from"
+            name="from"
+            ref={register}
+            className="ui fluid dropdown"
+          >
             {HOURS.map((hour) => (
               <option key={hour} value={hour}>
                 {hour}

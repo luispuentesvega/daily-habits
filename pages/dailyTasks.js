@@ -4,7 +4,6 @@ import { useState, setState } from 'react';
 
 export default function DailyTasks() {
   const [activities, setActivities] = useState([]);
-
   console.log('Activities:', activities);
 
   const addActivity = (activity) => {

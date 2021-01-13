@@ -5,11 +5,20 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build-semantic": "cd semantic && gulp build-css build-assets",
+    "watch-semantic": "cd semantic && npm run build-semantic && gulp watch"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "lodash": "^4.17.20",
     "next": "10.0.5",
+    "postcss": "^8.2.4",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-hook-form": "^6.14.1"
+  },
+  "devDependencies": {
+    "semantic-ui": "^2.4.2"
   }
 }

@@ -14,3 +14,22 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.center-element {
+  width: 40vw;
+}
+
+.error {
+  color: red;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
